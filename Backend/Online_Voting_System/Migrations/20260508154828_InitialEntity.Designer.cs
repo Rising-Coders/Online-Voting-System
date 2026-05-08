@@ -12,7 +12,7 @@ using Online_Voting_System.Data;
 namespace Online_Voting_System.Migrations
 {
     [DbContext(typeof(AppDbContext))]
-    [Migration("20260508132650_InitialEntity")]
+    [Migration("20260508154828_InitialEntity")]
     partial class InitialEntity
     {
         /// <inheritdoc />
@@ -317,7 +317,6 @@ namespace Online_Voting_System.Migrations
                         .HasColumnType("nvarchar(256)");
 
                     b.Property<string>("VoterName")
-                        .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
                     b.HasKey("Id");

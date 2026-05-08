@@ -314,7 +314,6 @@ namespace Online_Voting_System.Migrations
                         .HasColumnType("nvarchar(256)");
 
                     b.Property<string>("VoterName")
-                        .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
                     b.HasKey("Id");
